@@ -1,0 +1,59 @@
+version: '3'
+
+services:
+  witnet_01:
+    container_name: witnet_01
+    image: witnet/witnet-rust
+    command: node server --master-key-import /.witnet/config/master.key
+    restart: unless-stopped
+    volumes:
+      - $HOME/.witnet/witnet_01:/.witnet:rw
+  witnet_02:
+    container_name: witnet_02
+    image: witnet/witnet-rust
+    command: node server --master-key-import /.witnet/config/master.key
+    restart: unless-stopped
+    volumes:
+      - $HOME/.witnet/witnet_02:/.witnet:rw
+  witnet_03:
+    container_name: witnet_03
+    image: witnet/witnet-rust
+    command: node server --master-key-import /.witnet/config/master.key
+    restart: unless-stopped
+    volumes:
+      - $HOME/.witnet/witnet_03:/.witnet:rw
+  witnet_04:
+    container_name: witnet_04
+    image: witnet/witnet-rust
+    command: node server --master-key-import /.witnet/config/master.key
+    restart: unless-stopped
+    volumes:
+      - $HOME/.witnet/witnet_04:/.witnet:rw
+  witnet_05:
+    container_name: witnet_05
+    image: witnet/witnet-rust
+    command: node server --master-key-import /.witnet/config/master.key
+    restart: unless-stopped
+    volumes:
+      - $HOME/.witnet/witnet_05:/.witnet:rw
+  witnet_06:
+    container_name: witnet_06
+    image: witnet/witnet-rust
+    command: node server --master-key-import /.witnet/config/master.key
+    restart: unless-stopped
+    volumes:
+      - $HOME/.witnet/witnet_06:/.witnet:rw
+  witnet_07:
+    container_name: witnet_07
+    image: witnet/witnet-rust
+    command: node server --master-key-import /.witnet/config/master.key
+    restart: unless-stopped
+    volumes:
+      - $HOME/.witnet/witnet_07:/.witnet:rw
+  witnet_08:
+    container_name: witnet_08
+    image: witnet/witnet-rust
+    command: node server --master-key-import /.witnet/config/master.key
+    restart: unless-stopped
+    volumes:
+      - $HOME/.witnet/witnet_08:/.witnet:rw
